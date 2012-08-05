@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\Kika\Desktop\Mário\Wizzy PEN\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Kika\Desktop\Mário\Wizzy PEN\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Kika\Desktop\Mário\Wizzy PEN\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\Content\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Kika\Desktop\Mário\Wizzy PEN\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\bin\x86\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-06-21T16:28:19.9037384+01:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

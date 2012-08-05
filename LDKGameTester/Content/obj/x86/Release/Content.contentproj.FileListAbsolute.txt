@@ -1,0 +1,6 @@
+H:\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\Content\obj\x86\Release\ResolveAssemblyReference.cache
+I:\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\Content\obj\x86\Release\ResolveAssemblyReference.cache
+J:\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\Content\obj\x86\Release\ResolveAssemblyReference.cache
+F:\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\Content\obj\x86\Release\ResolveAssemblyReference.cache
+K:\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\Content\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Kika\Desktop\Mário\Wizzy PEN\C# Development\Pauldron Games\Lunar Dev Kit\Lunar Dev Kit\LDKGameTester\Content\obj\x86\Release\ResolveAssemblyReference.cache

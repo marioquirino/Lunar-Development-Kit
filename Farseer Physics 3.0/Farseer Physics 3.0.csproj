@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D0E5D62-AEF9-4413-95B2-93878E9E52AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Farseer_Physics_3._0</RootNamespace>
+    <AssemblyName>Farseer Physics 3.0</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collision\BroadPhase.cs" />
+    <Compile Include="Collision\Collision.cs" />
+    <Compile Include="Collision\Distance.cs" />
+    <Compile Include="Collision\DynamicTree.cs" />
+    <Compile Include="Collision\Shapes\CircleShape.cs" />
+    <Compile Include="Collision\Shapes\EdgeShape.cs" />
+    <Compile Include="Collision\Shapes\LoopShape.cs" />
+    <Compile Include="Collision\Shapes\PolygonShape.cs" />
+    <Compile Include="Collision\Shapes\Shape.cs" />
+    <Compile Include="Collision\TimeOfImpact.cs" />
+    <Compile Include="Common\ConvexHull\GiftWrap.cs" />
+    <Compile Include="Common\ConvexHull\Melkman.cs" />
+    <Compile Include="Common\Decomposition\BayazitDecomposer.cs" />
+    <Compile Include="Common\Decomposition\EarclipDecomposer.cs" />
+    <Compile Include="Common\FixedArray.cs" />
+    <Compile Include="Common\GrowableStack.cs" />
+    <Compile Include="Common\LineTools.cs" />
+    <Compile Include="Common\Math.cs" />
+    <Compile Include="Common\Path.cs" />
+    <Compile Include="Common\PathManager.cs" />
+    <Compile Include="Common\PolygonManipulation\BooleanTools.cs" />
+    <Compile Include="Common\PolygonManipulation\CuttingTools.cs" />
+    <Compile Include="Common\PolygonManipulation\SimplifyTools.cs" />
+    <Compile Include="Common\PolygonManipulation\YuPengClipper.cs" />
+    <Compile Include="Common\PolygonTools.cs" />
+    <Compile Include="Common\Settings.cs" />
+    <Compile Include="Common\TextureConverter.cs" />
+    <Compile Include="Common\Vertices.cs" />
+    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\GravityController.cs" />
+    <Compile Include="DebugView.cs" />
+    <Compile Include="DebugViewXNA.cs" />
+    <Compile Include="Dynamics\Body.cs" />
+    <Compile Include="Dynamics\BreakableBody.cs" />
+    <Compile Include="Dynamics\ContactManager.cs" />
+    <Compile Include="Dynamics\Contacts\Contact.cs" />
+    <Compile Include="Dynamics\Contacts\ContactSolver.cs" />
+    <Compile Include="Dynamics\Contacts\TOISolver.cs" />
+    <Compile Include="Dynamics\Fixture.cs" />
+    <Compile Include="Dynamics\Island.cs" />
+    <Compile Include="Dynamics\Joints\AngleJoint.cs" />
+    <Compile Include="Dynamics\Joints\DistanceJoint.cs" />
+    <Compile Include="Dynamics\Joints\FixedAngleJoint.cs" />
+    <Compile Include="Dynamics\Joints\FixedDistanceJoint.cs" />
+    <Compile Include="Dynamics\Joints\FixedLineJoint.cs" />
+    <Compile Include="Dynamics\Joints\FixedMouseJoint.cs" />
+    <Compile Include="Dynamics\Joints\FixedPrismaticJoint.cs" />
+    <Compile Include="Dynamics\Joints\FixedRevoluteJoint.cs" />
+    <Compile Include="Dynamics\Joints\FrictionJoint.cs" />
+    <Compile Include="Dynamics\Joints\GearJoint.cs" />
+    <Compile Include="Dynamics\Joints\Joint.cs" />
+    <Compile Include="Dynamics\Joints\LineJoint.cs" />
+    <Compile Include="Dynamics\Joints\PrismaticJoint.cs" />
+    <Compile Include="Dynamics\Joints\PullyJoint.cs" />
+    <Compile Include="Dynamics\Joints\RevoluteJoint.cs" />
+    <Compile Include="Dynamics\Joints\SliderJoint.cs" />
+    <Compile Include="Dynamics\Joints\WeldJoint.cs" />
+    <Compile Include="Dynamics\TimeStep.cs" />
+    <Compile Include="Dynamics\World.cs" />
+    <Compile Include="Dynamics\WorldCallbacks.cs" />
+    <Compile Include="Factories\BodyFactory.cs" />
+    <Compile Include="Factories\FixtureFactory.cs" />
+    <Compile Include="Factories\JointFactory.cs" />
+    <Compile Include="Factories\LinkFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

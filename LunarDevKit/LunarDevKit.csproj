@@ -1,0 +1,658 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0679C323-EC65-40FA-854A-780F1FE4A00B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LunarDevKit</RootNamespace>
+    <AssemblyName>LDK</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationIcon>Light Editor Window Icon.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>\rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>\rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.0.0.3437, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Engine">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.5.0.15095, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Action.cs" />
+    <Compile Include="Classes\Collections\AssetsPool.cs" />
+    <Compile Include="Classes\ErrorReport.cs" />
+    <Compile Include="Classes\InputEd.cs" />
+    <Compile Include="Classes\PropertyGridStuff\DesignerVerbSite.cs" />
+    <Compile Include="Classes\PropertyGridStuff\SpriteNameConverter.cs" />
+    <Compile Include="Classes\PropertyGridStuff\FontNameConverter.cs" />
+    <Compile Include="Classes\PropertyGridStuff\ScriptNameConverter.cs" />
+    <Compile Include="Classes\UI\FontItem.cs" />
+    <Compile Include="Classes\UI\ScriptItem.cs" />
+    <Compile Include="Classes\UndoProvider.cs" />
+    <Compile Include="Classes\World\ActorEd.cs" />
+    <Compile Include="Classes\World\ActorSelectionBox.cs" />
+    <Compile Include="Classes\World\ActorTypeEd.cs" />
+    <Compile Include="Classes\UI\AssetNode.cs" />
+    <Compile Include="Classes\World\CameraEd.cs" />
+    <Compile Include="Classes\Collections\ActorEdPool.cs" />
+    <Compile Include="Classes\Collections\LayerEdPool.cs" />
+    <Compile Include="Classes\Collections\LevelEdPool.cs" />
+    <Compile Include="Classes\Collections\NodePool.cs" />
+    <Compile Include="Classes\Collections\SpriteEdPool.cs" />
+    <Compile Include="Classes\Collections\ZoneEdPool.cs" />
+    <Compile Include="Classes\Enums.cs" />
+    <Compile Include="Classes\FileManager.cs" />
+    <Compile Include="Classes\Game\GameSettings.cs" />
+    <Compile Include="Classes\Game\GameWorld.cs" />
+    <Compile Include="Classes\GraphicsHandler\ContentBuilder.cs" />
+    <Compile Include="Classes\GraphicsHandler\ErrorLogger.cs" />
+    <Compile Include="Classes\Grid.cs" />
+    <Compile Include="Classes\Helper.cs" />
+    <Compile Include="Classes\World\FontEd.cs" />
+    <Compile Include="Classes\World\LayerEd.cs" />
+    <Compile Include="Classes\UI\LayerItem.cs" />
+    <Compile Include="Classes\World\LevelEd.cs" />
+    <Compile Include="Classes\UI\ListItem.cs" />
+    <Compile Include="Classes\UI\ResolutionItem.cs" />
+    <Compile Include="Classes\World\Script.cs" />
+    <Compile Include="Classes\World\SpriteEd.cs" />
+    <Compile Include="Classes\World\World.cs" />
+    <Compile Include="Classes\Zones\CircleZone.cs" />
+    <Compile Include="Classes\Zones\RectangleZone.cs" />
+    <Compile Include="Classes\Zones\Zone.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Controls\AssetItems\ActorAssetItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetItems\ActorAssetItem.Designer.cs">
+      <DependentUpon>ActorAssetItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AssetItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetItem.Designer.cs">
+      <DependentUpon>AssetItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AssetItems\FontAssetItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetItems\FontAssetItem.Designer.cs">
+      <DependentUpon>FontAssetItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AssetsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetsGroup.Designer.cs">
+      <DependentUpon>AssetsGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AssetsTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetsTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetViewItem.cs" />
+    <Compile Include="Controls\CollapsibleGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CollapsibleGroup.Designer.cs">
+      <DependentUpon>CollapsibleGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LevelTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetItems\ScriptAssetItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetItems\ScriptAssetItem.Designer.cs">
+      <DependentUpon>ScriptAssetItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ListBox2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScriptMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScriptTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SnapGridMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetItems\SpriteAssetItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AssetItems\SpriteAssetItem.Designer.cs">
+      <DependentUpon>SpriteAssetItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SpriteMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\CustomTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\NativeMethods.cs" />
+    <Compile Include="Controls\TabControl\TabStyle.cs" />
+    <Compile Include="Controls\TabControl\TabStyleProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabStyleProviders\TabStyleAngledProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabStyleProviders\TabStyleChromeProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabStyleProviders\TabStyleDefaultProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabStyleProviders\TabStyleIE8Provider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabStyleProviders\TabStyleNoneProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabStyleProviders\TabStyleRoundedProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabStyleProviders\TabStyleVisualStudioProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabStyleProviders\TabStyleVS2010Provider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\ThemedColors.cs" />
+    <Compile Include="Controls\ViewportControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WindowTitleBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WindowTitleBar.designer.cs">
+      <DependentUpon>WindowTitleBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutWindow.designer.cs">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AssetsBrowserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AssetsBrowserWindow.Designer.cs">
+      <DependentUpon>AssetsBrowserWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main Window\AssetsBrowserDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main Window\AssetsBrowserDock.Designer.cs">
+      <DependentUpon>AssetsBrowserDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main Window\LevelDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main Window\LevelDocument.Designer.cs">
+      <DependentUpon>LevelDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main Window\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main Window\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main Window\PropertiesDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main Window\PropertiesDock.Designer.cs">
+      <DependentUpon>PropertiesDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main Window\ToolsDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main Window\ToolsDock.Designer.cs">
+      <DependentUpon>ToolsDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewFontWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewFontWindow.designer.cs">
+      <DependentUpon>NewFontWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopUpWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PopUpWindow.Designer.cs">
+      <DependentUpon>PopUpWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Script Editor\ScriptDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Script Editor\ScriptDocument.Designer.cs">
+      <DependentUpon>ScriptDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Script Editor\ScriptEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Script Editor\ScriptEditor.Designer.cs">
+      <DependentUpon>ScriptEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SpriteFontWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpriteFontWindow.Designer.cs">
+      <DependentUpon>SpriteFontWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DevKitWindow.cs">
+    </Compile>
+    <Compile Include="Forms\DevKitWindow.designer.cs">
+      <DependentUpon>DevKitWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameSettingsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameSettingsWindow.designer.cs">
+      <DependentUpon>GameSettingsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HelpWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HelpWindow.designer.cs">
+      <DependentUpon>HelpWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main Window\LayersDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main Window\LayersDock.designer.cs">
+      <DependentUpon>LayersDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoadingScreen.designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewActorWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewActorWindow.Designer.cs">
+      <DependentUpon>NewActorWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewLevelWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewLevelWindow.designer.cs">
+      <DependentUpon>NewLevelWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewScriptWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewScriptWindow.designer.cs">
+      <DependentUpon>NewScriptWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewWorldWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewWorldWindow.designer.cs">
+      <DependentUpon>NewWorldWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PackageWizardWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PackageWizardWindow.designer.cs">
+      <DependentUpon>PackageWizardWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PreferencesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PreferencesWindow.designer.cs">
+      <DependentUpon>PreferencesWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressWindow.designer.cs">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Script Editor\ScriptErrorsDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Script Editor\ScriptErrorsDock.Designer.cs">
+      <DependentUpon>ScriptErrorsDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TagEditor.Designer.cs">
+      <DependentUpon>TagEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Classes\GraphicsHandler\GraphicsDeviceControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\GraphicsHandler\GraphicsDeviceService.cs" />
+    <Compile Include="Interfaces\IEdObject.cs" />
+    <Compile Include="lang_English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>lang_English.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\AssetItem.resx">
+      <DependentUpon>AssetItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AssetsGroup.resx">
+      <DependentUpon>AssetsGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CollapsibleGroup.resx">
+      <DependentUpon>CollapsibleGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WindowTitleBar.resx">
+      <DependentUpon>WindowTitleBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutWindow.resx">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AssetsBrowserWindow.resx">
+      <DependentUpon>AssetsBrowserWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main Window\AssetsBrowserDock.resx">
+      <DependentUpon>AssetsBrowserDock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main Window\LevelDocument.resx">
+      <DependentUpon>LevelDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main Window\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main Window\PropertiesDock.resx">
+      <DependentUpon>PropertiesDock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main Window\ToolsDock.resx">
+      <DependentUpon>ToolsDock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewFontWindow.resx">
+      <DependentUpon>NewFontWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PopUpWindow.resx">
+      <DependentUpon>PopUpWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Script Editor\ScriptDocument.resx">
+      <DependentUpon>ScriptDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Script Editor\ScriptEditor.resx">
+      <DependentUpon>ScriptEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpriteFontWindow.resx">
+      <DependentUpon>SpriteFontWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DevKitWindow.resx">
+      <DependentUpon>DevKitWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameSettingsWindow.resx">
+      <DependentUpon>GameSettingsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HelpWindow.resx">
+      <DependentUpon>HelpWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main Window\LayersDock.resx">
+      <DependentUpon>LayersDock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewActorWindow.resx">
+      <DependentUpon>NewActorWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewLevelWindow.resx">
+      <DependentUpon>NewLevelWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewScriptWindow.resx">
+      <DependentUpon>NewScriptWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewWorldWindow.resx">
+      <DependentUpon>NewWorldWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PackageWizardWindow.resx">
+      <DependentUpon>PackageWizardWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PreferencesWindow.resx">
+      <DependentUpon>PreferencesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressWindow.resx">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Script Editor\ScriptErrorsDock.resx">
+      <DependentUpon>ScriptErrorsDock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TagEditor.resx">
+      <DependentUpon>TagEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Main\App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Classes\GraphicsHandler\ServiceContainer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewScriptIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoSprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArchetypeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseFolderIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenFolderIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Light Editor Window Icon.ico" />
+    <None Include="app.config" />
+    <None Include="lang_English.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>lang_English.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Microsoft.Xna.GameStudio.ContentPipeline.targets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\FontIcon.png" />
+    <None Include="Resources\CharIcn.bmp" />
+    <None Include="Resources\buttonscrpt2.bmp" />
+    <None Include="Resources\buttonmdl.bmp" />
+    <None Include="Resources\ArrwRght.png" />
+    <None Include="Resources\ArrwDwn.png" />
+    <None Include="Resources\Select1.png" />
+    <None Include="Resources\Save World1.png" />
+    <None Include="Resources\Render Lighting1.png" />
+    <None Include="Resources\Render Effects1.png" />
+    <None Include="Resources\Paste1.png" />
+    <None Include="Resources\Open World1.png" />
+    <None Include="Resources\New World1.png" />
+    <None Include="Resources\Delete1.png" />
+    <None Include="Resources\Cut1.png" />
+    <None Include="Resources\Copy1.png" />
+    <None Include="Resources\Assets Browser1.png" />
+    <None Include="Resources\TestGame32.png" />
+    <None Include="Resources\Assets Browser32.png" />
+    <None Include="Resources\Select32.png" />
+    <None Include="Resources\Render Grid32.png" />
+    <None Include="Resources\Render Effects32.png" />
+    <None Include="Resources\Render Lighting32.png" />
+    <None Include="Resources\Delete32.png" />
+    <None Include="Resources\Cut32.png" />
+    <None Include="Resources\Copy32.png" />
+    <None Include="Resources\Paste32.png" />
+    <None Include="Resources\Redo32.png" />
+    <None Include="Resources\Undo32.png" />
+    <None Include="Resources\NoSprite32.png" />
+    <None Include="Resources\NoSprite16.png" />
+    <None Include="Resources\Save World32.png" />
+    <None Include="Resources\Open World32.png" />
+    <None Include="Resources\New World32.png" />
+    <None Include="Resources\Save World16.png" />
+    <None Include="Resources\Select.png" />
+    <None Include="Resources\Save World.png" />
+    <None Include="Resources\Render Lighting.png" />
+    <None Include="Resources\Render Grid.png" />
+    <None Include="Resources\Render Effects.png" />
+    <None Include="Resources\Paste.png" />
+    <None Include="Resources\Open World.png" />
+    <None Include="Resources\New World.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Cut.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Assets Browser.png" />
+    <None Include="Resources\redo16.png" />
+    <None Include="Resources\undo16.png" />
+    <None Include="Resources\save16.png" />
+    <None Include="Resources\bkgrnd3.png" />
+    <None Include="Resources\brdr.bmp" />
+    <None Include="Resources\XYSizeIcn.png" />
+    <None Include="Resources\stretch.bmp" />
+    <None Include="Resources\ShrinkHover.png" />
+    <None Include="Resources\Shrink.png" />
+    <None Include="Resources\MinimizeHover.png" />
+    <None Include="Resources\Minimize.png" />
+    <None Include="Resources\MaximizeHover.png" />
+    <None Include="Resources\Maximize.png" />
+    <None Include="Resources\CloseHover.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\brdrtst.bmp" />
+    <None Include="Resources\Brdr3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Farseer Physics 3.0\Farseer Physics 3.0.csproj">
+      <Project>{1D0E5D62-AEF9-4413-95B2-93878E9E52AB}</Project>
+      <Name>Farseer Physics 3.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LDKGameTester\LDKGameTester.csproj">
+      <Project>{8E628F4C-2CB2-4B32-AD0C-E21E5096A62B}</Project>
+      <Name>LDKGameTester</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LunarEngine\LunarEngine.csproj">
+      <Project>{781CDFDF-509E-42EF-91D0-42157480A10F}</Project>
+      <Name>LunarEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

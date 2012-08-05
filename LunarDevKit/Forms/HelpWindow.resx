@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox4.Text" xml:space="preserve">
+    <value>Levels, as the name suggests, are where you build your environments, place your objects and such.
+To create a new Level do one of the following methods:
+
+	1: Go to File &gt; New Level
+
+	2: Click on the fourth button on the left, currently there isn't a proper icon available for it.
+
+	3: Press Ctrl + N
+
+On the window that appears you can choose the name you want to give to your Level as well as it's width and height, currently it's in pixels, but it may change in the future.
+
+Noticed the Open button? Useful if you want to import a level from another project or somewhere else.
+You don't need to import the levels from your own project, the LDK does it automatically.
+
+Now hit Create to create the Level.
+
+If you are looking for a faster way to import levels to your World project, right-click in the New Level Button and you can directly browse for the levels you want to import.
+Note that you can select multiple levels at once.
+
+Now you are ready to start importing assets to your project!</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>The Package Wizard is a very useful new feature.
+Basically it lets you pack all your assets into on single file and then import that file into other projects.
+It's insanely useful when you have a huge amount of assets and don't want to load them manually on another project you want them to.
+Just let LDK do everything for you.
+
+Firstly go to Tools &gt; Package Wizard
+
+You will realize that a lot of features aren't implemented yet, but the basic functionality is enough for now.
+
+
+In the Create Package, you are able to create a package from your world's current assets.
+Give the package a name and optionally and description.
+
+And hit the Create button.
+Your package has been successfully saved to the LDK packages folder.
+Packages can't be saved anywhere else, yet.
+
+Now, if you want just to test, create a new world project, add a new level, go to the Package Wizard.
+This time go to Show Packages.
+
+This section shows all packages available in the LDK Packages folder.
+Select the package and hit Import.
+If you had more packages available, you could select has many as you want and load them all at once.
+
+You can now check that the assets have been properly loaded into your Assets Browser</value>
+  </data>
+  <data name="textBox6.Text" xml:space="preserve">
+    <value>As you can see, you have a little toolstrip on the top-middle of the viewport.
+It contains several buttons that may prove very useful when designing your level, but right now only the first two are available:
+	
+	1: Select Tool: 
+		While this button is checked you are able to select actors, drag them to wherever you like and delete them by pressing the Delete key or go to Edit &gt; Delete.
+		If unchecked, you are able to place new objects (also called actors) on the level. Make sure you selected an archetype on the Assets Browser.
+
+	2: Toggle Grid: Very straighforward, simply toggles on or off the displaying of the grid. At the moment the grid doesn't help that much, but it will in the future.
+
+Note that actors can't be placed outside level bounds.
+
+
+Viewport Basic Controls:
+	
+	- Click and drag on an actor to select him and move him. Be sure to have the Select Tool checked.
+	- Having an actor select, press and hold Ctrl and move the mouse around to rotate the actor. Beware, this feature is still buggy.
+	
+	- Right-Click and drag on the viewport to move the camera.
+	- Mouse Scroll up and down to zoom in and out respectively.
+	- Middle-Mouse click and drag up and down for a better zoom.
+
+	- Press Space to activate and deactivate the Select Tool
+	- Press G to toggle the Grid on or off.</value>
+  </data>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>The Assets Browser is where you can import your images and textures, called Sprites, and create new types of objects called Archetypes.
+To open the Assets Browser go to World &gt; Assets or just press Ctrl + A.
+
+(Know that this window will always remain on top unless you close it.)
+
+Now, you see three buttons on the upper-left corner. 
+
+	1: The first one is used to create folders. It's helpful when you want to organize your assets and put them under subcategories.
+
+	2: The second button is where you create a new archetype.
+
+	3: The third one let's you load a single sprite and you can also give it a name. If you right-click this button, you will be able to select multiple images at once but names will be assigned automatically.
+
+Let's load our first Sprite, by clicking on the Sprite Button, the third button.
+
+When you feel ready, hit Create.
+
+With your new object type created, you are ready to start placing objects (or actors) on your level.
+
+On the window that appears, you are able to choose the name for the sprite and load a sprite from your computer.
+Hit Load Sprite and choose one of your images and click OK.
+The image will appear below.
+
+If you are satisfied, go ahead and hit Create.
+
+Now that we have at least one sprite, we are going to create a new Archetype, by clicking on the New Archetype button.
+
+The Archetype window has significantly more features.
+Firstly add a name to your new archetype.
+Now right-click on the small square inside the Sprite Group.
+A small list appears with the available sprites. Choose the one you loaded previously.
+The other settings are pretty straight forward, except Visible which doesn't have any usefulness at the moment.
+
+When you feel ready, go ahead and hit Create.
+
+By double-clicking an archetype or a sprite, you are able to edit them.
+Double-clicking a folder, will open the folder in the explorer.
+
+Now that you have your first object type created, you are ready to start placing objects on your level!</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>There are several ways of creating a world:
+
+	1: Go to File &gt; New World
+
+	2: Click on the first button on the left, the one with a World and a Plus sign
+
+	3: Press Ctrl + W
+
+On the window that appears you can choose the name you want to give to your World project, and the folder to where you want to save the project.
+
+Now hit Create to create the World.
+
+
+You can also open an already existing World file:
+
+	1: Go to File &gt; Open World
+
+	2: Click on the second button on the left, the one with a World and a Folder
+
+	3: Press Ctrl + O
+
+Now browse through your files and find a World file that you saved before.
+Hit OK to load the World.</value>
+  </data>
+</root>

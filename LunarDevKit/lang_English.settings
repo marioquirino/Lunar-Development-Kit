@@ -1,0 +1,171 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LunarDevKit" GeneratedClassName="lang_English">
+  <Profiles />
+  <Settings>
+    <Setting Name="SaveWorldMsg" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Do you want to save the project before exiting the Editor?</Value>
+    </Setting>
+    <Setting Name="ExitEditorMsg" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Do you wish to exit Lunar Dev Kit?</Value>
+    </Setting>
+    <Setting Name="CompileScriptsSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Scripts compiled successfully!</Value>
+    </Setting>
+    <Setting Name="BuildLevelsSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Levels built successfully!</Value>
+    </Setting>
+    <Setting Name="BuildAssetsSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Assets built successfully!</Value>
+    </Setting>
+    <Setting Name="BuildGameSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Game built successfully!</Value>
+    </Setting>
+    <Setting Name="CompileScriptsFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Scripts failed to compile!</Value>
+    </Setting>
+    <Setting Name="BuildLevelsFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Levels failed to build!</Value>
+    </Setting>
+    <Setting Name="BuildAssetsFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Assets failed to build!</Value>
+    </Setting>
+    <Setting Name="BuildGameFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Game failed to build!</Value>
+    </Setting>
+    <Setting Name="OpenWorldFileFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The world file could not be opened!</Value>
+    </Setting>
+    <Setting Name="FileNotFound" Type="System.String" Scope="Application">
+      <Value Profile="(Default)"> could not be found!</Value>
+    </Setting>
+    <Setting Name="InvalidLocationPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Invalid location path!</Value>
+    </Setting>
+    <Setting Name="OpenWorld" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Open World</Value>
+    </Setting>
+    <Setting Name="IsAlreadyOpen" Type="System.String" Scope="Application">
+      <Value Profile="(Default)"> is already open!</Value>
+    </Setting>
+    <Setting Name="CreateWorldSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">World created successfully!</Value>
+    </Setting>
+    <Setting Name="CreateWorldFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Failed to create the new world project!</Value>
+    </Setting>
+    <Setting Name="AssetsInitializeError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Initialize cannot be called without Reset( ) being called first!</Value>
+    </Setting>
+    <Setting Name="SpriteWithSameNameExistsError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A sprite with this name already exists!</Value>
+    </Setting>
+    <Setting Name="ChooseNewNameMsg" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Do you want to choose a new name?</Value>
+    </Setting>
+    <Setting Name="NewSpriteMsg" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">New Sprite</Value>
+    </Setting>
+    <Setting Name="SpriteTypeNewName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Type a new name for the sprite:</Value>
+    </Setting>
+    <Setting Name="FontWithSameNameExistsError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A font with this name already exists!</Value>
+    </Setting>
+    <Setting Name="NewFontMsg" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">New Font</Value>
+    </Setting>
+    <Setting Name="FontTypeNewName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Type a new name for the font:</Value>
+    </Setting>
+    <Setting Name="ActorTypeWithSameNameExistsError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">An actor with this name already exists!</Value>
+    </Setting>
+    <Setting Name="NewActorTypeMsg" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">New Actor</Value>
+    </Setting>
+    <Setting Name="ActorTypeTypeNewName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Type a new name for the actor:</Value>
+    </Setting>
+    <Setting Name="OpenWorldSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">World loaded successfully!</Value>
+    </Setting>
+    <Setting Name="SaveWorldSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">World saved successfully!</Value>
+    </Setting>
+    <Setting Name="CreateLevelSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Level created successfully!</Value>
+    </Setting>
+    <Setting Name="SaveLevelSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Level saved successfully!</Value>
+    </Setting>
+    <Setting Name="CreateFontSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Font created successfully!</Value>
+    </Setting>
+    <Setting Name="CreateFontFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)"> font doesn't exist!</Value>
+    </Setting>
+    <Setting Name="CreateActorSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Actor created successfully!</Value>
+    </Setting>
+    <Setting Name="ImportSpriteSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sprite(s) imported successfully!</Value>
+    </Setting>
+    <Setting Name="ImportSpriteFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Failed to import the sprite(s) to the project!</Value>
+    </Setting>
+    <Setting Name="SaveLevelsSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Levels saved successfully!</Value>
+    </Setting>
+    <Setting Name="CreateDirectoryFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)"> directory couldn't be created!</Value>
+    </Setting>
+    <Setting Name="SaveFilePrompt" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Do you wish to save the </Value>
+    </Setting>
+    <Setting Name="LevelName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">level</Value>
+    </Setting>
+    <Setting Name="LevelWithSameNameExists" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A level with the same name already exists!</Value>
+    </Setting>
+    <Setting Name="NoObjectSelected" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No object selected</Value>
+    </Setting>
+    <Setting Name="PropertiesName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Properties</Value>
+    </Setting>
+    <Setting Name="NoFontAssignedMsg" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This actor needs to have an assigned font asset in order to become a Text Actor!</Value>
+    </Setting>
+    <Setting Name="ScriptWithSameNameExistsError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A script with this name already exists!</Value>
+    </Setting>
+    <Setting Name="FontDontExistError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This font does not exist!</Value>
+    </Setting>
+    <Setting Name="NoFontAssigned" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No Font Assigned</Value>
+    </Setting>
+    <Setting Name="LayerDeletePrompt" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Are you sure you want to delete this layer?</Value>
+    </Setting>
+    <Setting Name="LayerWithSameNameExistsError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A layer with this name already exists!</Value>
+    </Setting>
+    <Setting Name="ScriptSavePrompt" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Do you wish to save this script?</Value>
+    </Setting>
+    <Setting Name="NoScriptAssigned" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No Script Assigned</Value>
+    </Setting>
+    <Setting Name="ActortypePropertyChangedPrompt" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Do you want the changes to the selected actortype be applied to all it's instances?</Value>
+    </Setting>
+    <Setting Name="ActortypeNotFoundError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Actor will not be placed in the level because a valid Actortype wasn't found!</Value>
+    </Setting>
+    <Setting Name="SaveAssetsPrompt" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Do you wish to save the assets before exiting?</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
